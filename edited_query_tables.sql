@@ -10,7 +10,7 @@
     "child_poverty_rate" DEC   NOT NULL,
     "unemployment_rate" DEC   NOT NULL,
     CONSTRAINT "pk_county_statistics" PRIMARY KEY (
-        "county"
+        "county", "state"
      )
 );
 
@@ -29,6 +29,6 @@ CREATE TABLE "county_sociohealth_data" (
      )
 );
 
-ALTER TABLE "county_sociohealth_data" ADD CONSTRAINT "fk_county_sociohealth_data_county" FOREIGN KEY("county")
-REFERENCES "county_statistics" ("county");
+ALTER TABLE "county_sociohealth_data" ADD CONSTRAINT "fk_county_sociohealth_data_county" FOREIGN KEY("county", "state")
+REFERENCES "county_statistics" ("county", "state");
 
