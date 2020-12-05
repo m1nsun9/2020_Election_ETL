@@ -31,7 +31,7 @@ We performed the following data **__transformations__** in Python:
 
 - **Deleted the cases/deaths columns** (Columns were no longer needed)
 
-![](screenshots/cases_deaths_drop.png)
+![](screenshots/cases:deaths_drop.png)
 
 - **Renamed/rearranged columns to match the PostgreSQL database** (Column headers needed to be exact matches for tables to be updated)
 
